@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira ticket management</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="toolbar">
+        <div class="priority-cont">
+            <div class="color pink"></div>
+            <div class="color green"></div>
+            <div class="color blue"></div>
+            <div class="color black"></div>
+        </div>
+        <div class="add-remove-btn">
+            <div class="add"><i class="bi bi-plus-lg"></i></div>
+            <div class="remove"><i class="bi bi-x-lg"></i></div>
+        </div>
+    </div>
+    <div class="main">
+    </div>
+    <div class="modal">
+        <textarea class="content"></textarea>
+        <div class="priority">
+            <div class="color pink" data-color="pink"></div>
+            <div class="color green" data-color="green"></div>
+            <div class="color blue" data-color="blue"></div>
+            <div class="color black border" data-color="black"></div>
+            <button>Add ticket</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
