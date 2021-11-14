@@ -59,5 +59,11 @@ function createTicket() {
     display=false;
     modal.style.display="none"
     textArea.value="";
-
+    for (let i = 0; i < children.length-1; i++) {
+        
+            border.classList.remove("border");
+         
+       
+    }
+    children[3].classList.add("border")
 }
