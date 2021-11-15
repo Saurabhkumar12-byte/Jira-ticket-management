@@ -79,7 +79,7 @@ i {
 .modal {
   border-radius: 4px;
   height: 23rem;
-  width: 39rem;
+  width: 36rem;
   background-color: #596275;
   position: absolute;
   top: 50%;
@@ -197,5 +197,12 @@ html{
       }
       .priority-cont{
         margin-left: 1rem;
+      }
+      .ticket{
+        width: 34rem ;
+  height: 24rem;
+      }
+      .ticket-content{
+        font-size: 2.4rem;
       }
   }
