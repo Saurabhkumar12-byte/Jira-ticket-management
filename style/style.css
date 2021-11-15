@@ -183,17 +183,17 @@ html{
         height: 4.2rem;
         width: 20%;
         position: relative;
-        right: 5rem;
+        right: 2rem;
       }
     .priority-cont {
-        width: 40%;
+      width: 50%;
         
         
       }
       .edit{
         margin-left: 0rem;
         position: relative;
-        right: 4rem;
+        right: -1rem;
       }
       .priority-cont{
         margin-left: 1rem;
