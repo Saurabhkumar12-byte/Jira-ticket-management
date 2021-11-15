@@ -193,14 +193,14 @@ html{
       .edit{
         margin-left: 0rem;
         position: relative;
-        right: -1rem;
+        right: -.7rem;
       }
       .priority-cont{
         margin-left: 1rem;
       }
       .ticket{
         width: 34rem ;
-  height: 24rem;
+        height: 24rem;
       }
       .ticket-content{
         font-size: 2.4rem;
