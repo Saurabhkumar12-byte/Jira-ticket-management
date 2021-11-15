@@ -1,6 +1,7 @@
 let add = document.querySelector(".add");
 let display = false;
 let modal = document.querySelector(".modal");
+var ticketColor;
 add.addEventListener("click",(e)=>{
     display=!display;
     if (display) modal.style.display="flex"
@@ -15,6 +16,7 @@ for (let i = 0; i < children.length-1; i++) {
         let border= document.querySelector(".border");
         border.classList.remove("border");
         children[i].classList.add("border");
+        ticketColor = children[i].classList[1];
     })
     
 }
@@ -38,7 +40,7 @@ function createTicket() {
     
     if(border.getAttribute("data-color")==="pink"){
         url='1.png'
-        console.log(url);
+      
         
     }
     else if(border.getAttribute("data-color")==="green"){
@@ -52,8 +54,8 @@ function createTicket() {
     }
     let div = document.createElement("div");
     div.setAttribute("class","ticket");
-    div.innerHTML=`<div class="ticket-color"></div>
-    <div class="ticket-id"></div>
+    div.innerHTML=`<div class="ticket-color ${ticketColor}"></div>
+   
     <div class="ticket-content" style="background-image:url(${url})" >${textArea.value}</div>`;
     main.appendChild(div);
     display=false;
@@ -62,8 +64,35 @@ function createTicket() {
     for (let i = 0; i < children.length-1; i++) {
         
             border.classList.remove("border");
-         
+
        
     }
     children[3].classList.add("border")
 }
+
+let remove= document.querySelector(".remove");
+remove.addEventListener("click", (e)=>{
+    document.querySelectorAll(".ticket").forEach(element => {
+        element.addEventListener("click",()=>{
+            element.style.display="none";
+        })
+    });
+//     remove.addEventListener("dblclick", function remove(params) {
+//         // console.log('removed');
+//         remove.removeEventListener('click', function ge() {
+//             console.log('Button Clicked');
+//          });
+            
+//    })
+})
+
+// let priorityCont= document.querySelector(".priority-cont");
+// let priorchildren= priorityCont.children;
+// for (let i = 0; i < priorchildren.length; i++) {
+//     const element = priorchildren[i];
+    
+//     element.addEventListener("click", ()=>)
+    
+// }
+
+
