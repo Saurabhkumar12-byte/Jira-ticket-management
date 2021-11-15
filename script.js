@@ -95,4 +95,36 @@ remove.addEventListener("click", (e)=>{
     
 // }
 
+let edit = document.querySelector(".edit i");
 
+edit.addEventListener("click",()=>{
+    
+    edit.setAttribute("class","bi bi-pencil-fill")
+    let editelm= document.querySelectorAll(".ticket-content");
+    for (let i = 0; i < editelm.length; i++) {
+        const element = editelm[i];
+        
+                 element.setAttribute("contenteditable","true");
+           
+       
+        
+    }
+
+    
+})
+edit.addEventListener("dblclick",()=>{
+    
+    edit.setAttribute("class","bi bi-pencil")
+    let editelm= document.querySelectorAll(".ticket-content");
+    for (let i = 0; i < editelm.length; i++) {
+        const element = editelm[i];
+        
+            
+                 element.setAttribute("contenteditable","false");
+           
+       
+        
+    }
+
+    
+})
